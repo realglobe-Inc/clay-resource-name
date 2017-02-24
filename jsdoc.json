@@ -1,0 +1,103 @@
+{
+  "classes": [
+    {
+      "name": "ClayResourceName",
+      "description": "",
+      "extends": [],
+      "access": "",
+      "virtual": false,
+      "fires": "",
+      "constructor": {
+        "name": "ClayResourceName",
+        "description": "Id generator",
+        "parameters": [
+          {
+            "name": "id",
+            "type": [
+              "string",
+              "object"
+            ],
+            "description": "Id string",
+            "default": "newIdString()",
+            "optional": true,
+            "nullable": ""
+          }
+        ],
+        "examples": []
+      },
+      "functions": [
+        {
+          "name": "is",
+          "access": "",
+          "virtual": false,
+          "description": "Compare to another name",
+          "parameters": [
+            {
+              "name": "name",
+              "type": [
+                "string",
+                "ClayResourceName"
+              ],
+              "description": "",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "boolean",
+            "description": ""
+          }
+        },
+        {
+          "name": "toString",
+          "access": "",
+          "virtual": false,
+          "description": "Convert to string",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "string",
+            "description": "String representation"
+          }
+        },
+        {
+          "name": "toJSON",
+          "access": "",
+          "virtual": false,
+          "description": "Convert to json (Called from JSON.stringify)",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "string",
+            "description": "JSON representation"
+          }
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "name": "create",
+      "access": "",
+      "virtual": false,
+      "description": "Create a ClayResourceName instance",
+      "parameters": [
+        {
+          "name": "args",
+          "type": "*",
+          "description": "",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        }
+      ],
+      "examples": [],
+      "returns": {
+        "type": "ClayResourceName",
+        "description": ""
+      }
+    }
+  ]
+}
