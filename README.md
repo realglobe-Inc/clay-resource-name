@@ -86,6 +86,41 @@ const clayResourceName = require('clay-resource-name')
 
 <!-- Section from "doc/guides/02.Usage.md.hbs" End -->
 
+<!-- Section from "doc/guides/03.API.md.hbs" Start -->
+
+<a name="section-doc-guides-03-a-p-i-md"></a>
+
+API
+---------
+
+# clay-resource-name@1.0.0
+
+Name object of ClayDB resources
+
++ Functions
+  + [create(args)](#clay-resource-name-function-create)
+
+## Functions
+
+<a class='md-heading-link' name="clay-resource-name-function-create" ></a>
+
+### create(args) -> `ClayResourceName`
+
+Create a ClayResourceName instance
+
+| Param | Type | Description |
+| ----- | --- | -------- |
+| args | * |  |
+
+
+
+
+
+
+
+
+<!-- Section from "doc/guides/03.API.md.hbs" End -->
+
 
 <!-- Sections Start -->
 
