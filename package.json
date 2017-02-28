@@ -24,8 +24,7 @@
   "homepage": "https://github.com/realglobe-Inc/clay-resource-name#readme",
   "dependencies": {
     "clay-constants": "^1.4.2",
-    "co": "^4.6.0",
-    "semver": "^5.3.0"
+    "co": "^4.6.0"
   },
   "devDependencies": {
     "ababel": "^2.0.1",
