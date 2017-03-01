@@ -20,7 +20,7 @@ describe('create', function () {
   }))
 
   it('Create', () => co(function * () {
-    let created = create('foo@1')
+    let created = create('foo@examle.com')
     ok(created)
   }))
 })

@@ -20,15 +20,16 @@ describe('clay-resource-name', function () {
   }))
 
   it('Clay resource name', () => co(function * () {
-    ok(new ClayResourceName('foo@1'))
-    ok(new ClayResourceName('foo@1').is(new ClayResourceName({ name: 'foo', version: '1' })))
+    ok(new ClayResourceName('foo@example.com'))
+    ok(new ClayResourceName('foo@example.com').is(new ClayResourceName({ name: 'foo', domain: 'example.com' })))
 
-    let { name, version } = new ClayResourceName('foo@1')
+    let { name, domain } = new ClayResourceName('foo@example.com')
     equal(name, 'foo')
-    equal(version, '1')
+    equal(domain, 'example.com')
 
-    equal(new ClayResourceName('foo@1').toString(), 'foo@1')
-    equal(new ClayResourceName('foo').version, 'latest')
+    equal(new ClayResourceName('foo@example.com').toString(), 'foo@example.com')
+    equal(new ClayResourceName('foo').toString(), 'foo')
+    equal(new ClayResourceName('foo').domain, null)
   }))
 })
 
