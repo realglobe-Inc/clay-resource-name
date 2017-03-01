@@ -3,6 +3,6 @@
 const clayResourceName = require('clay-resource-name')
 
 {
-  let name = clayResourceName('foo@1.2.3')
+  let name = clayResourceName('foo@example.com')
   /* ... */
 }
