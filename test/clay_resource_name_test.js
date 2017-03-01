@@ -23,7 +23,7 @@ describe('clay-resource-name', function () {
     ok(new ClayResourceName('foo@example.com'))
     ok(new ClayResourceName('foo@example.com').is(new ClayResourceName({ name: 'foo', domain: 'example.com' })))
 
-    let { name, domain } = new ClayResourceName('foo@example.com')ø
+    let { name, domain } = new ClayResourceName('foo@example.com')
     equal(name, 'foo')
     equal(domain, 'example.com')
 
