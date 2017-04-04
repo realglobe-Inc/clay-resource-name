@@ -2,13 +2,9 @@ language: node_js
 node_js:
 - '6'
 before_install:
-# TODO OSS
-# - npm i npm-cli-login -g
-# - npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
-# - npm who
-- echo "registry = https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-virtual" > $HOME/.npmrc
-- curl -u${NPM_USER}:${NPM_PASSWORD} "https://realglobe.artifactoryonline.com/realglobe/api/npm/auth" >> $HOME/.npmrc
-- cat $HOME/.npmrc
+- npm i npm-cli-login -g
+- npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
+- npm who
 install:
 - npm install jsdoc -g
 - npm install
@@ -20,4 +16,4 @@ script:
 after_success:
 - ./ci/travis/publish.js
 env:
-  secure: "IRrUz+O1nhes405cnc3mRelwt1A+z0Ttl0yAlMXtQTM6VIBt84vVqv41yerO8CUkxgLhOajwtXu9NPUy+ko4Zvc3qL0++vCarqN6lPFZ/Q7ST6Miy8hbPE84jkf+3upGAbrNne6ZprH0dxlSsfiMKXrV+gzgnbdxJe7pnICQGJaOGikf2LOsJyjUEr19kUqnHHlOE7KY0zlqYranCYW2p56nGSfJdP7p6yzQ1ljsRUyGaP+qFlkpYz65ke8Mcq7Ijjgy6G7CO/C7kQqPVVa6bEaosPiizuINOflsJASsJVseV6GtVTV5l8nwsEv+fGOwWji0iTzQ5H1zQ+Bokd1DOT5UHfg9n8wdtPGW0YVySywNqdnj+XOaFCCYNXgwKSBNBHqJCV6NYA1dw+4KcNB10zAzF4Q4F+2akZ7+PWQcZUk/hJQ6irBZ9BIVq1GjuQxBXZU0TuPdHoLc7PCzNrw9IhU+3JwJ+Q/kVxNvZhrFELEGtV/32dm7VJmEtq7mPi2yLe+YrluvTMRZSbDCMO5Mlq++1r7P/UJGc9tC36G/5lrCGC8+qUXW0VROj685VNPTS52a7zvoI2CtxANeuwb+P8tG7x5D3AKFrWehjehSx1YubrWkaWowV6af2elqUakwa36jYufw/VAW7AvwQCZg7GtAfLcR1SpFOgVtldVaBlY="
+  secure: "dfqai00jdklgu89Qi+ulcJS9OLj/lp7lNJf8A9bTKso1p1UR+rx459g50Kpq2F12JBTKE2Xl1MhbJl49AZaD/lnodCJeoD730GpK0j0bG8z4kimkPc7M+ZP+Xh1PtJN6zMcyPKdXZTzQDz7/v6/7bpjA7KvI2Y71AgdXOaM5lL0eJFKbRoliCEq4Gv0CM7YNShLw1Q5hWfrfol7J0omrM+4fgCiuZx8FuBWaZe2mMYa9wHcs6Bt+mt7A/iszsmvpJPK8ZyQVfQ4tmWZX5jQk5HsQElzqWsStcYAWwpuyMZ8caVV4KvcEHsMmwKxvXVUaQ4CSR0BOUBerULd66fI0AFKq7NwW2TzHQGcPtSY8kmTFDxTzzaHDd5NcX3TzZ84p3mfOMxeNldVlJboDsGz7WgV6ZyGaSCQ6h4aQwfdlvsDiFYIhzohMf0CbpKs+y1E+6MYvpjbAOiLFUd7FUOvdvMrGekErJGgBfbctIfdEmR/iiKJFq4yLwVxgzkrGsW9vvRH5JPy3spKSmONclE0XEErLX9wvBmETzxBkIgAmkLvQkHFiWNJSiWLH9mikeivA/8MSAqoRhXpjj33LxJkWM+sW7qSS3frMal6rf6K2UzJEXnbhZiXPgdPmJnQw6cJ2FC9XaeE1bMoUA3ItvYXbETbvjRlCPLFwSCDvLIH30U8="
