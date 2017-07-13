@@ -1,4 +1,4 @@
-# clay-resource-name@4.0.0
+# clay-resource-name@4.0.1
 
 Name object of ClayDB resources
 
