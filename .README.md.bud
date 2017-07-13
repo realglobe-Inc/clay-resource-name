@@ -13,8 +13,6 @@ module.exports = readmeMdBud({
   sections: 'doc/guides/*.md.hbs',
   badges: {
     travis: true,
-    travisCom: true,
-    travisComToken: 'aeFzCpBZebyaRijpCFmm',
     npm: true,
     standard: true
   },
