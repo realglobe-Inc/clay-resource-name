@@ -93,7 +93,7 @@ const clayResourceName = require('clay-resource-name')
 API
 ---------
 
-# clay-resource-name@4.0.3
+# clay-resource-name@4.0.4
 
 Name object of ClayDB resources
 
